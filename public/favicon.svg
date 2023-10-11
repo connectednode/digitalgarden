@@ -1,32 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 340.17786 340.17789" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <clipPath clipPathUnits="userSpaceOnUse" id="clip-1">
-      <circle style="display:inline;fill:#010101;fill-opacity:0.25974;stroke:none;stroke-width:17.5299;stroke-linecap:round;paint-order:stroke fill markers" id="circle-1" cx="490.92603" cy="82.562355" r="151.52245" />
-    </clipPath>
-    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1187">
-      <circle style="display:inline;fill:#010101;fill-opacity:0.25974;stroke:none;stroke-width:17.5299;stroke-linecap:round;paint-order:stroke fill markers" id="circle1189" cx="490.92603" cy="82.562355" r="151.52245" transform="rotate(27.290079)" />
-    </clipPath>
-    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1183">
-      <circle style="display:inline;fill:#010101;fill-opacity:0.25974;stroke:none;stroke-width:17.5299;stroke-linecap:round;paint-order:stroke fill markers" id="circle1185" cx="490.92603" cy="82.562355" r="151.52245" transform="rotate(27.290079)" />
-    </clipPath>
-    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1175">
-      <circle style="display:inline;fill:#010101;fill-opacity:0.25974;stroke:none;stroke-width:17.5299;stroke-linecap:round;paint-order:stroke fill markers" id="circle1177" cx="490.92603" cy="82.562355" r="151.52245" transform="rotate(27.290079)" />
-    </clipPath>
-    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1163">
-      <circle style="display:inline;fill:#010101;fill-opacity:0.25974;stroke:none;stroke-width:17.5299;stroke-linecap:round;paint-order:stroke fill markers" id="circle1165" cx="490.92603" cy="82.562355" r="151.52245" transform="rotate(27.290079)" />
-    </clipPath>
-  </defs>
-  <g id="layer2" style="display:inline" transform="matrix(1, 0, 0, 1, -13.327175, -124.742493)">
-    <g id="g938">
-      <g id="g1175" transform="translate(-1.0513349,3.3377632)">
-        <g id="g1015" transform="matrix(1.0883157,0.05151254,-0.05151254,1.0883157,-233.77567,-53.849758)" style="display:inline">
-          <circle style="fill:#010101;fill-opacity:1;stroke:none;stroke-width:17.5299;stroke-linecap:round;paint-order:stroke fill markers" id="circle-2" cx="490.92596" cy="82.562363" transform="rotate(27.290086,-6.6193219e-6,-9.2983355e-6)" clip-path="url(#clip-1)" r="151.52245" />
-          <path d="M 456.565 369.049 C 479.508 338.769 503.162 307.488 505.754 283.175 L 505.751 283.168 C 505.999 280.782 505.981 278.696 506.034 276.531 C 504.878 283.065 502.844 289.804 499.679 296.61 C 493.199 310.566 476.128 329.259 454.51 352.93 C 427.134 382.888 394.377 418.753 380.946 449.012 C 374.008 448.207 367.08 446.914 360.21 445.117 C 367.115 427.895 379.179 409.782 393.154 391.974 C 396.002 378.121 411.744 285.688 344.351 204.415 C 340.767 200.087 340.305 193.999 343.239 189.227 C 346.154 184.48 351.772 182.07 357.297 183.336 C 383.02 189.15 406.015 206.69 422.04 232.754 C 439.518 261.169 446.78 296.325 443.529 334.165 C 460.65 315.404 476.128 298.07 480.865 287.868 C 487.503 273.597 488.151 259.897 482.636 251.244 C 480.097 247.277 476.522 244.899 473.076 244.899 C 472.314 244.899 470.458 244.967 469.81 245.685 C 468.895 246.668 468.551 249.302 468.671 250.755 C 469.116 256.408 464.952 261.445 459.308 261.968 C 453.783 262.54 448.66 258.47 448.045 252.835 C 447.9 251.561 446.926 240.144 454.374 231.858 C 457.307 228.59 463.054 223.281 471.64 222.776 C 472.811 222.546 496.285 220.475 512.695 236.022 C 524.11 246.815 528.711 263.413 526.369 285.364 C 523.179 315.397 498.884 347.525 473.153 381.534 C 456.581 403.443 439.649 425.821 429.38 446.793 C 421.511 448.44 413.501 449.466 405.425 449.847 C 415.678 423.101 436.364 395.756 456.565 369.049 Z M 417.961 362.429 C 428.693 317.578 423.955 275.454 404.382 243.623 C 396.967 231.565 387.852 221.782 377.676 214.728 C 414.286 270.832 419.141 327.545 417.475 362.983 C 417.637 362.795 417.799 362.609 417.961 362.429 Z" id="path997" style="fill:#87b38d;fill-opacity:1;stroke:none;stroke-width:1.00035;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" clip-path="url(#clipPath1187)" />
-          <path d="m 474.40041,461.91583 c 0,4.2695 -3.4609,7.7305 -7.7305,7.7305 -4.2695,0 -7.7305,-3.4609 -7.7305,-7.7305 0,-4.2656 3.4609,-7.7266 7.7305,-7.7266 4.2695,0 7.7305,3.4609 7.7305,7.7266" id="path1001" style="fill:#e1dadf;fill-opacity:1" clip-path="url(#clipPath1183)" />
-          <path d="m 306.68456,255.69492 c 6.1172,0 11.098,-4.9766 11.098,-11.09 0,-6.1134 -4.9766,-11.09 -11.098,-11.09 -6.1133,0 -11.09,4.9766 -11.09,11.09 0,6.1134 4.9766,11.09 11.09,11.09 z m 0,-12.711 c 0.89453,0 1.625,0.72266 1.625,1.6211 0,0.89453 -0.72266,1.6211 -1.625,1.6211 -0.89062,0 -1.6211,-0.72266 -1.6211,-1.6211 0,-0.89844 0.72656,-1.6211 1.6211,-1.6211 z" id="path1005" style="fill:#e1dadf;fill-opacity:1" clip-path="url(#clipPath1175)" transform="matrix(2.1891685,0,0,2.1891685,-378.44713,-189.94615)" />
-        </g>
-      </g>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="198.12807"
+   height="130.14294"
+   viewBox="0 0 198.12807 130.14294"
+   version="1.1"
+   id="SVGRoot"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2293" />
+  <g
+     id="layer1"
+     transform="translate(-0.91578186,-35.399101)">
+    <path
+       style="display:inline;fill:none;stroke:#0a0a0a;stroke-width:8.74094px;stroke-linecap:round;stroke-linejoin:round"
+       d="m 29.566651,161.17158 v 0 L 39.278809,44.62565 M 5.2862519,64.049969 v 0 H 180.10513 M 5.2862519,39.76957 a 97.121599,4.8560798 0 0 0 97.1215981,4.85608 m 67.98512,116.54593 v 0 L 160.68081,44.62565 m 33.99256,19.424319 v 0 H 19.854492 M 194.67337,39.76957 a 97.121599,4.8560798 0 0 1 -97.121602,4.85608"
+       id="path6" />
   </g>
 </svg>

@@ -1,0 +1,72 @@
+---
+export interface Props {
+  date: Date;
+  title: string;
+  body: string;
+  href: string;
+}
+
+const { href, title, body, date } = Astro.props;
+---
+
+<li class="link-card">
+  <a href={href}>
+    <h2>
+      {title}
+    </h2>
+    <p>
+      <strong>{body}</strong>
+    </p>
+    <p class="time">
+      {date.toLocaleDateString("en-GB", { dateStyle: "long" })}
+    </p>
+  </a>
+</li>
+<style lang="scss">
+  .link-card {
+    list-style: none;
+    display: flex;
+    padding: 0.15rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: var(--secondary-color);
+    border-width: 2px;
+
+    background-color: white;
+    background-size: 200% 100%;
+    background-image: linear-gradient(
+      to right,
+      var(--highlight-color),
+      white 50%
+    );
+    background-position: -100% 0;
+
+    transition: 300ms;
+    &:hover {
+      background-position: -200% 0;
+    }
+  }
+  .link-card > a {
+    width: 100%;
+    text-decoration: none;
+    line-height: 1.4;
+    padding: 1rem 1.3rem;
+    border-radius: 0.35rem;
+    color: #111;
+    background-color: white;
+    opacity: 0.8;
+  }
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: #444;
+  }
+  .time {
+    font-size: 0.8em;
+  }
+</style>

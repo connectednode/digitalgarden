@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Author from "../components/Author.astro";
+
+const { title, frontmatter } = Astro.props;
+---
+
+<Layout title={title} frontmatter={frontmatter}>
+  <div>
+    <span>
+      <slot />
+    </span>
+    <span>
+      <hr />
+      <Author />
+    </span>
+  </div>
+</Layout>
+
+<style>
+  div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+</style>

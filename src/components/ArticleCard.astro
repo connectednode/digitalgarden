@@ -1,12 +1,12 @@
 ---
 export interface Props {
-  date: Date;
   title: string;
   body: string;
   href: string;
+  categorys: { title: string; href: string }[];
 }
 
-const { href, title, body, date } = Astro.props;
+const { href, title, body, categorys } = Astro.props;
 ---
 
 <li class="link-card">
@@ -17,9 +17,13 @@ const { href, title, body, date } = Astro.props;
     <p>
       <strong>{body}</strong>
     </p>
-    <p class="time">
-      {date.toLocaleDateString("en-GB", { dateStyle: "long" })}
-    </p>
+    <div class="category">
+      catagory's: {
+        categorys.map((category) => (
+          <a href={`/category/${category}`}>{category}&nbsp;</a>
+        ))
+      }
+    </div>
   </a>
 </li>
 <style lang="scss">
@@ -68,5 +72,32 @@ const { href, title, body, date } = Astro.props;
   }
   .time {
     font-size: 0.8em;
+  }
+  .category {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    A {
+      font-weight: 750;
+      text-align: center;
+      flex-grow: 1;
+      text-decoration: none;
+      color: #444;
+      border-width: 0px;
+      border-style: solid;
+      border-radius: 1em;
+      margin: 10px;
+      padding: 20px;
+      background-color: var(--primary-color);
+      transition: 200ms;
+
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
   }
 </style>

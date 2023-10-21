@@ -3,10 +3,10 @@ export interface Props {
   title: string;
   body: string;
   href: string;
-  categorys: { title: string; href: string }[];
+  tags: { title: string; href: string }[];
 }
 
-const { href, title, body, categorys } = Astro.props;
+const { href, title, body, tags } = Astro.props;
 ---
 
 <li class="link-card">
@@ -17,19 +17,18 @@ const { href, title, body, categorys } = Astro.props;
     <p>
       <strong>{body}</strong>
     </p>
-    <div class="category">
-      catagory's: {
-        categorys.map((category) => (
-          <a href={`/category/${category}`}>{category}&nbsp;</a>
-        ))
-      }
-    </div>
   </a>
+  <div class="tag">
+    <strong>catagory's:</strong>
+    {tags.map((tag) => <a href={`/tag/${tag}`}>{tag}&nbsp;</a>)}
+  </div>
 </li>
+
 <style lang="scss">
   .link-card {
     list-style: none;
     display: flex;
+    flex-direction: column;
     padding: 0.15rem;
     border-style: solid;
     border-radius: 0.5rem;
@@ -51,7 +50,6 @@ const { href, title, body, categorys } = Astro.props;
     }
   }
   .link-card > a {
-    width: 100%;
     text-decoration: none;
     line-height: 1.4;
     padding: 1rem 1.3rem;
@@ -73,25 +71,26 @@ const { href, title, body, categorys } = Astro.props;
   .time {
     font-size: 0.8em;
   }
-  .category {
+  .tag {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+    padding: 1rem 1.3rem;
+    // margin-left: auto;
+    // margin-right: auto;
 
     A {
       font-weight: 750;
-      text-align: center;
-      flex-grow: 1;
+      // text-align: center;
+      // flex-grow: 1;
       text-decoration: none;
       color: #444;
       border-width: 0px;
       border-style: solid;
       border-radius: 1em;
-      margin: 10px;
-      padding: 20px;
+      margin: 0.5rem;
+      padding: 0.5rem;
       background-color: var(--primary-color);
       transition: 200ms;
 

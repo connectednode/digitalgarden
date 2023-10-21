@@ -14,7 +14,7 @@ const posts = await Astro.glob("./post/*.md");
             href={post.url!}
             title={post.frontmatter.title}
             body={post.frontmatter.description}
-            categorys={post.frontmatter.categorys}
+            tags={post.frontmatter.tags}
           />
         </ul>
       ))

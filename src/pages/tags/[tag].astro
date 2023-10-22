@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import ArticleCard from "../../components/ArticleCard.astro";
 
 const posts = await Astro.glob("../post/*.md");
-// TODO: optimize
+// TODO: optimize / remove duplicat params
 export async function getStaticPaths() {
     const posts = await Astro.glob("../post/*.md");
     return posts.flatMap((post) =>

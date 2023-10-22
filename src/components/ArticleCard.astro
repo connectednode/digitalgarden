@@ -19,8 +19,8 @@ const { href, title, body, tags } = Astro.props;
     </p>
   </a>
   <div class="tag">
-    <strong>catagory's:</strong>
-    {tags.map((tag) => <a href={`/tag/${tag}`}>{tag}&nbsp;</a>)}
+    <strong>tags:</strong>
+    {tags.map((tag) => <a href={`/tags/${tag}`}>{tag}&nbsp;</a>)}
   </div>
 </li>
 

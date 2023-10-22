@@ -2,22 +2,37 @@
 import Layout from "../../layouts/Layout.astro";
 import ArticleCard from "../../components/ArticleCard.astro";
 
-const posts = await Astro.glob("./post/*.md");
+const posts = await Astro.glob("../post/*.md");
+// TODO: optimize
+export async function getStaticPaths() {
+    const posts = await Astro.glob("../post/*.md");
+    return posts.flatMap((post) =>
+        post.frontmatter.tags.map((tag: any) => ({
+            params: { tag: tag },
+        }))
+    );
+}
+console.log(await getStaticPaths());
+const { tag } = Astro.params;
 ---
 
 <Layout title="All articles" frontmatter={null}>
     <main>
+        {tag}
         {
-            posts.reverse().map((post) => (
-                <ul role="list" class="link-card-grid">
-                    <ArticleCard
-                        href={post.url!}
-                        title={post.frontmatter.title}
-                        body={post.frontmatter.description}
-                        tags={post.frontmatter.tags}
-                    />
-                </ul>
-            ))
+            posts
+                .filter((post) => post.frontmatter.tags.includes(tag))
+                .reverse()
+                .map((post) => (
+                    <ul role="list" class="link-card-grid">
+                        <ArticleCard
+                            href={post.url!}
+                            title={post.frontmatter.title}
+                            body={post.frontmatter.description}
+                            tags={post.frontmatter.tags}
+                        />
+                    </ul>
+                ))
         }
     </main>
 </Layout>

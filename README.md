@@ -1,3 +1,11 @@
+# pallet
+#EDF1D6
+#9DC08B
+#609966
+#40513B
+
+![pallet](/Color%20Hunt%20Palette%20edf1d69dc08b60996640513b.png)
+
 # Astro Starter Kit: Basics
 
 ```

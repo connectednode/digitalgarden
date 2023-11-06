@@ -16,7 +16,7 @@ console.log(await getStaticPaths());
 const { tag } = Astro.params;
 ---
 
-<Layout title="All articles" frontmatter={null}>
+<Layout title={tag!} frontmatter={null}>
     <main>
         {tag}
         {

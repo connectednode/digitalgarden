@@ -22,11 +22,8 @@ const { title, frontmatter } = Astro.props;
   <body>
     <Header />
     <div class="container">
-      <!-- <div class="torn torn-left"></div> -->
       <div class="content"><slot /></div>
-      <!-- <div class="torn torn-right"></div> -->
     </div>
-    <!-- <div class="torn-bottom"></div> -->
     <Footer />
   </body>
 </html>
@@ -71,42 +68,6 @@ const { title, frontmatter } = Astro.props;
     padding: 10px;
     border-radius: 1em;
     background-color: #2a2a2a !important;
-  }
-
-  .torn {
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 35px;
-    height: 100%;
-
-    @media screen and (max-width: 97em) {
-      display: none;
-    }
-  }
-  .torn-left {
-    background: url("/torn-left.png");
-    background-size: contain;
-    left: -20px;
-  }
-  .torn-right {
-    background: url("/torn-right.png");
-    background-size: contain;
-    background-position-y: 50%;
-    right: -20px;
-  }
-  .torn-bottom {
-    z-index: -1;
-    background: url("/torn.png");
-    background-size: contain;
-    background-position-y: 50%;
-    background-repeat: repeat-x;
-    max-width: calc(90em + 70px);
-    width: calc(100% - 4em + 64px);
-    height: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -15px;
   }
 
   .container {

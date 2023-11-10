@@ -6,7 +6,7 @@ const posts = await Astro.glob("../post/*.md");
 // TODO: optimize / remove duplicat params
 export async function getStaticPaths() {
     const posts = await Astro.glob("../post/*.md");
-    return posts.flatMap((post) =>
+    return posts.flatMap((post: any) =>
         post.frontmatter.tags.map((tag: any) => ({
             params: { tag: tag },
         }))

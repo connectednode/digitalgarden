@@ -1,0 +1,53 @@
+---
+---
+
+<h3>Webring</h3>
+<div class="webring">
+  <a href="https://garden.mitchellton.com/">
+    <img class="entry" src="/images/mitchellton.png" />
+  </a>
+  <a href="https://blog.ironsm4sh.nl/">
+    <img class="entry" src="/images/blog.ironsm4sh.png" />
+  </a>
+  <a href="https://feldspaten.org/">
+    <img class="entry" src="/images/feldspaten.png" />
+  </a>
+  <a href="http://boekenwuurm.nl/">
+    <img class="entry" src="/images/boekenwuurm.png" />
+  </a>
+  <a href="https://fiona.onl/">
+    <img class="entry" src="/images/fiona.png" />
+  </a>
+</div>
+
+<style lang="scss">
+  h3 {
+    text-align: center;
+  }
+  .webring {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a {
+    font-weight: 750;
+    text-align: center;
+    flex-grow: 1;
+    text-decoration: none;
+    color: #444;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 1em;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    transition: 200ms;
+
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+</style>

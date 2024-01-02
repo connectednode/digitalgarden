@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import Author from "../components/Author.astro";
-import Projects from "../components/Projects.astro";
+import WebRing from "../components/WebRing.astro";
 
 const posts = await Astro.glob("./post/*.md");
 ---
@@ -29,7 +29,7 @@ const posts = await Astro.glob("./post/*.md");
     </div>
     <div class="projects">
       <hr />
-      <Projects />
+      <WebRing />
     </div>
   </main>
 </Layout>
